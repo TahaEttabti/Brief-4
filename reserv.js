@@ -18,7 +18,7 @@ function validation() {
     if ((Atele(T)) && (DateR(Dd)) && (Apermis(P))) {
       alert("Validé");
       affich.style.display="block";
-      affich.innerHTML="Votre Nom : " + N.value.fontcolor("white") + "<br>"  + "Votre Prenom : " + Pe.value.fontcolor("white") + "<br>" + "Votre Email : " + E.value.fontcolor("white") + "<br>" + "Votre Telephone : "  + T.value.fontcolor("white") + "<br>"  + "La Date de départ : " + Dd.value.fontcolor("white") +  "<br>"  + "La Date de Fin : " + Df.value.fontcolor("white") + "<br>"+ "Votre produit : " + Ca.value.fontcolor("white");     
+      affich.innerHTML="Votre Nom : " + N.value.fontcolor("white")+ "<br>"  + "Votre Prenom : " + Pe.value.fontcolor("white") + "<br>" + "Votre Email : " + E.value.fontcolor("white") + "<br>" + "Votre Telephone : "  + T.value.fontcolor("white") + "<br>"  + "La Date de départ : " + Dd.value.fontcolor("white") +  "<br>"  + "La Date de Fin : " + Df.value.fontcolor("white") + "<br>"+ "Votre produit : " + Ca.value.fontcolor("white");     
       }
       }   
     } return false; 
