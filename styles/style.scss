@@ -13,7 +13,7 @@
       background-size: cover;
       width: 100%;
       height: 700px;
-      opacity: 0.8;
+      opacity: 0.9;
     }
   }
   #img {
@@ -232,7 +232,7 @@ div.gallery {
 	border: 1px solid #ccc;
 	float: left;
 	width: 20%;
-	background-color: teal;
+	background-color: #4ea8d485;
 	&:hover {
 		border: 1px solid #777;
 	}
@@ -279,7 +279,7 @@ strong {
    border: 1px solid #ccc;
    float: left;
    width: 20%;
-   background-color: teal;
+   background-color: #4ea8d485;
  }
  
  div.gallery1:hover {
@@ -328,7 +328,7 @@ section.sec3 {
   left: 16em;
   color: white;
   border: 2px solid #009688;
-  border-radius: 160px;
+  border-radius: 50px;
   height: 25%;
   width: 75%;
   padding: 10px;
@@ -344,8 +344,8 @@ div.nous #h1, #p {
     top: 293em;
     left: 0;
     color: white;
-    border: 5px solid #009688;
-    border-radius: 110px;
+    border: 2px solid #009688;
+    border-radius: 40px;
     height: 20%;
     width: 100%;
   }
@@ -357,7 +357,6 @@ div.nous #h1, #p {
   }
 }
 
-/* STYLES SPECIFIC TO FOOTER  */
 .footer {
   width: 100%;
   position: relative;

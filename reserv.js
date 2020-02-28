@@ -13,14 +13,12 @@ function validation() {
     {
       Ca.options[Ca.selectedIndex].text;
 
-    if ((Anom(N)) && (Aprenom (Pe)) && (Aemail(E)))  
-    {
-    if ((Atele(T)) && (DateR(Dd)) && (Apermis(P))) {
+    if ((Anom(N)) && (Aprenom (Pe)) && (Aemail(E)) && (Atele(T)) && (DateR()) && (P.value.length > 0) && (Dd.value.length > 0) && (Df.value.length > 0)&& (Apermis())) {
+
       alert("Validé");
       affich.style.display="block";
       affich.innerHTML="Votre Nom : " + N.value.fontcolor("white")+ "<br>"  + "Votre Prenom : " + Pe.value.fontcolor("white") + "<br>" + "Votre Email : " + E.value.fontcolor("white") + "<br>" + "Votre Telephone : "  + T.value.fontcolor("white") + "<br>"  + "La Date de départ : " + Dd.value.fontcolor("white") +  "<br>"  + "La Date de Fin : " + Df.value.fontcolor("white") + "<br>"+ "Votre produit : " + Ca.value.fontcolor("white");     
-      }
-      }   
+      } 
     } return false; 
   }
   function Anom(N){
@@ -42,7 +40,7 @@ function validation() {
     }
   }
     
-  function Aemail(E) {
+  function Aemail() {
         let emailID = document.reserv.Email.value;
               at = emailID.indexOf("@");
               dot = emailID.lastIndexOf(".");
@@ -63,7 +61,7 @@ function validation() {
              return false;
             }      
   }    
-  function DateR(Dd) {
+  function DateR() {
       let d = new Date(document.getElementById('dateDebut').value)/(24*60*60*1000);
       let f = new Date(document.getElementById('dateFin').value)/(24*60*60*1000);
          if(d>=f) {
@@ -73,7 +71,7 @@ function validation() {
             return true;
     } 
   }
-  function Apermis(P) {
+  function Apermis() {
     var date1 =new Date(document.getElementById('dateP').value); 
     var date2 =new Date(); 
     var datetext =date1.getDate()+date1.getMonth()*30+date1.getFullYear()*365; 
