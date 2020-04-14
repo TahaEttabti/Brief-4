@@ -17,7 +17,7 @@ function validation() {
 }
   
 function Anom(N){
-  let caractere = /[A-Z]/;
+  let caractere = /^[A-Za-z]/;
   if (N.value.match(caractere)){
     return true
   } else {
